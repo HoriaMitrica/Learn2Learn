@@ -5,4 +5,7 @@
 .testingMedia{
     @include mediaQuery.flex-center;
     font-family: globalVariables.$TextFont;
+    @include mediaQuery.respond-to(small) {
+        color:aqua;
+      }
 }
