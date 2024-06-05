@@ -1,6 +1,6 @@
-@import '../../styles/golbalStyle.scss';
+@use '../../styles/globalVariables.scss';
 
 .testClass{
-    font-family: $GulfDisplay;
-    color: $Orange;
+    font-family: globalVariables.$GulfDisplay;
+    color: globalVariables.$Orange;
 }

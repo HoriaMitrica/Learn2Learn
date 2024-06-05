@@ -1,0 +1,8 @@
+@use '../../styles/globalVariables.scss';
+@use '../../styles/mediaQuery.scss';
+
+
+.testingMedia{
+    @include mediaQuery.flex-center;
+    font-family: globalVariables.$TextFont;
+}
