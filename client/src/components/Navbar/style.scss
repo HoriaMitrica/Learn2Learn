@@ -1,0 +1,12 @@
+@use '../../styles/globalVariables.scss';
+
+.testClassOne{
+    font-family: globalVariables.$TextFont;
+    color: globalVariables.$FontColor;
+}
+
+.anotherTestClass{
+    font-family: globalVariables.$BoldStrom;
+    color: globalVariables.$PrimaryBlue
+
+}

@@ -1,0 +1,6 @@
+@use '../../styles/globalVariables.scss';
+
+.testClass{
+    font-family: globalVariables.$GulfDisplay;
+    color: globalVariables.$Orange;
+}
