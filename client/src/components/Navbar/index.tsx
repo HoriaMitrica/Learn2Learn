@@ -1,6 +1,6 @@
 
 import { Link } from "react-scroll"
-import { AssetPaths } from "../../models/enum"
+// import { AssetPaths } from "../../models/enum"
 import "./style.scss"
 
 export const Navbar: React.FC = () => {
