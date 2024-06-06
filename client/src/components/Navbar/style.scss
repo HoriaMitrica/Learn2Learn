@@ -1,13 +1,20 @@
-@use '../../styles/globalStyle.scss';
+@use "../../styles/globalStyle.scss";
+@use "../../styles/globalVariables.scss";
 
 .logo-img {
   width: 64px;
-  height: auto; 
+  height: auto;
+  margin-left: 2em;
+  margin-top: 0.25em;
+}
+
+.link{
+  cursor:pointer;
 }
 #nav-wrapper {
   overflow: hidden;
   width: 100%;
-  margin: 0 auto;
+  margin: 1 auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,12 +23,39 @@
 .nav-small-screen{
   height: auto;
 }
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+}
+.nav-link.active{
+  color:globalVariables.$TextFont;
+  background: -webkit-linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+  background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+ 
+}
+    .nav-link-span {
+      transform: skew(20deg);
+      display: inline-block;
+    }
+  
+    .nav-link {
+      transform: skew(-20deg);
+      color: globalVariables.$FontColor;
+      text-decoration: none;
+    }
+    .nav-link:last-child {
+      padding-right: 3em;
+    }
+  
+    a:hover.nav-link:not(.active) {
+      color: globalVariables.$FontColor;
+      background: globalVariables.$SecondaryBlue;
+      
+    }
 #nav {
-  background-color: #fff;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+   background-color: globalVariables.$PrimaryBlue;
   display: flex;
-  flex-direction: column;
-  font-family: "Saira Semi Condensed", sans-serif;
+  flex-direction: row;
   overflow: hidden;
   user-select: none;
   height:4em;
@@ -43,45 +77,25 @@
   padding: 0 1em;
 }
 
-span.gradient {
-  background: #990000;
-  background: -webkit-linear-gradient(33deg, #990000, #cd0000);
-  background: linear-gradient(33deg, #990000, #cd0000);
-  padding: 0 1em;
+.right {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  left: 1.5em;
+  height: auto;
+}
+
+.gradient {
+  background: globalVariables.$PrimaryYellow; 
   height:4em;
   position: relative;
   right: 1em;
   margin-right: auto;
 }
-span.gradient:hover {
+.gradient:hover {
   animation-name: logo-hover;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
 }
-
-
-.nav-link {
-  text-transform: uppercase;
-  text-align: center;
-  border-top: 0.5px solid #ddd;
-}
-
-
-.right {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.btn-nav {
-background: #990000;
-background: -webkit-linear-gradient(33deg, #990000, #cd0000);
-background: linear-gradient(33deg, #990000, #cd0000);
-width:100px;
-left: 1em;
-margin-left: auto;
-
-}
-
-
-

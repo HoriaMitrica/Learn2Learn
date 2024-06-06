@@ -5,7 +5,31 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.skew {
+    transform: skew(-20deg);
+}
+
+.un-skew {
+    transform: skew(20deg);
+}
+
+.main{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
 #about {
-    width: 100vw;
+    background-color:$PrimaryRed;
+    height: 100vh;
+}
+#landing {
     height: 100vh;
 }

@@ -3,7 +3,7 @@ import './style.scss'
 export const About = () => {
     return (
         <>
-            <section id="about">
+            <section id="about" className="main">
                 <div className="testingMedia">
                     Matematica cu Zeus? Shaorma Afroditei? Ce legatură pot avea matematica și mitologia greacă? Cu 34 de ani de experiență în domeniul educației, Aida Frujină, profesor MERITO, a perfecționat arta predării interactive, dezvoltând un stil unic de „învățare prin poveste”. Și-a propus ca cei mici nu doar sã participe la o oră de curs obișnuită, ci să fie purtați în nenumărate lumi de poveste, perioade istorice și legende fascinante.
                 </div>

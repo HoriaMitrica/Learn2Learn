@@ -3,7 +3,7 @@ import "./style.scss"
 export const Landing = () => {
   return (
     <>
-      <section id="landing">
+      <section id="landing" className="main">
         <h1>
           Learn to Learn
         </h1>
