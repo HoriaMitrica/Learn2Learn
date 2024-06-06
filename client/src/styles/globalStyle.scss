@@ -19,17 +19,43 @@ body {
     transform: skew(20deg);
 }
 
-.main{
-    display:flex;
+.main {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-
-#about {
-    background-color:$PrimaryRed;
-    height: 100vh;
 }
+
 #landing {
     height: 100vh;
+}
+
+#about {
+    background-color: $PrimaryRed;
+    height: 100vh;
+}
+
+#media_aparitions {
+    height: 100vh;
+}
+
+#articles {
+    height: 100vh;
+}
+
+#included_courses {
+    height: 100vh;
+}
+
+#optional_courses {
+    height: 100vh;
+}
+
+#offer {
+    height: 100vh;
+}
+
+#contact {
+    height: 100vh;
+    background-color: $PrimaryGreen;
 }

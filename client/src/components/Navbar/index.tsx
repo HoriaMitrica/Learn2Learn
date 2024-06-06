@@ -21,28 +21,49 @@ export const Navbar: React.FC = () => {
                         <Link className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={100}>
                             <span className='nav-link-span'>
                                 <span className='u-nav'>
-                                    About
+                                    Despre noi
                                 </span>
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={100}>
+                        <Link className='link nav-link' to='media_aparitions' spy={true} smooth={true} offset={0} duration={100}>
                             <span className='nav-link-span'>
                                 <span className='u-nav'>
-                                    About
+                                    Apariții media
                                 </span>
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={100}>
+                        <Link className='link nav-link' to='articles' spy={true} smooth={true} offset={0} duration={100}>
                             <span className='nav-link-span'>
                                 <span className='u-nav'>
-                                    About
+                                    Articole
                                 </span>
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={100}>
+                        <Link className='link nav-link' to='included_courses' spy={true} smooth={true} offset={0} duration={100}>
                             <span className='nav-link-span'>
                                 <span className='u-nav'>
-                                    About
+                                    Cursuri incluse
+                                </span>
+                            </span>
+                        </Link>
+                        <Link className='link nav-link' to='optional_courses' spy={true} smooth={true} offset={0} duration={100}>
+                            <span className='nav-link-span'>
+                                <span className='u-nav'>
+                                    Cursuri opționale
+                                </span>
+                            </span>
+                        </Link>
+                        <Link className='link nav-link' to='offer' spy={true} smooth={true} offset={0} duration={100}>
+                            <span className='nav-link-span'>
+                                <span className='u-nav'>
+                                    Oferta
+                                </span>
+                            </span>
+                        </Link>
+                        <Link className='link nav-link' to='contact' spy={true} smooth={true} offset={0} duration={100}>
+                            <span className='nav-link-span'>
+                                <span className='u-nav'>
+                                    Contact
                                 </span>
                             </span>
                         </Link>

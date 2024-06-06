@@ -1,8 +1,11 @@
 import { About } from "./components/About"
-import { Card } from "./components/Card"
+import { Articles } from "./components/Articles"
+import { Contact } from "./components/Contact"
+import { Courses } from "./components/Courses"
 import { Landing } from "./components/Landing"
+import { MediaAparitions } from "./components/MediaAparitions"
 import { Navbar } from "./components/Navbar"
-
+import { Offer } from "./components/Offer"
 
 function App() {
 
@@ -11,7 +14,12 @@ function App() {
     <Navbar/>
     <Landing/>
     <About/>
-    <Card/>
+    <MediaAparitions/>
+    <Articles/>
+    <Courses id={'included_courses'}/>
+    <Courses id={'optional_courses'}/>
+    <Offer/>
+    <Contact/>
     </>
   )
 }
