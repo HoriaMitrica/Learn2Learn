@@ -1,3 +1,3 @@
 export enum AssetPaths{
-    Logo="/src/assets/logos/logo_yellow.png"
+    Logo="/assets/logos/logo_yellow.png"
 }

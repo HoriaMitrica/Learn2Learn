@@ -1,21 +1,21 @@
 @font-face {
     font-family: "BoldStrom";
-    src: url("/src/assets/fonts/Boldstrom.otf") format("opentype");
+    src: url("/assets/fonts/Boldstrom.otf") format("opentype");
   }
   
   @font-face {
     font-family: "GilroyLight";
-    src: url("/src/assets/fonts/GilroyLight/GilroyLight.otf") format("opentype"),
-    url("/src/assets/fonts/GilroyLight/GilroyLight.woff") format("woff"),
-    url("/src/assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"),
+    src: url("/assets/fonts/GilroyLight/GilroyLight.otf") format("opentype"),
+    url("/assets/fonts/GilroyLight/GilroyLight.woff") format("woff"),
+    url("/assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"),
   }
   
   @font-face {
     font-family: "GulfDisplay";
     src:
-      url("/src/assets/fonts/GulfsDisplay/GulfsDisplay.ttf") format("truetype"),
-      url("/src/assets/fonts/GulfsDisplay/GulfsDisplay.woff") format("woff"),
-      url("/src/assets/fonts/GulfsDisplay/GulfsDisplay.woff2") format("woff2"),
+      url("/assets/fonts/GulfsDisplay/GulfsDisplay.ttf") format("truetype"),
+      url("/assets/fonts/GulfsDisplay/GulfsDisplay.woff") format("woff"),
+      url("/assets/fonts/GulfsDisplay/GulfsDisplay.woff2") format("woff2"),
   
   }
   
