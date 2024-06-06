@@ -1,1 +1,7 @@
 @import "mediaQuery";
+@import "globalVariables";
+
+html {
+    scroll-behavior: smooth;
+  }
+  
