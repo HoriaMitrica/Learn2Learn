@@ -3,15 +3,27 @@
 
 
 
-.text-left{
+.about-left{
   width:40vw;
+  margin-right: 1rem;
+
+}
+.title-smaller{
+  font-family: globalVariables.$BoldStrom;
+  font-size: xx-large;
 }
 .image{
   width:40vw;
   height:auto;
   
 }
-.text-right{
+.about-right{
   width:50vw;
-  font-size: x-large;
+  margin-left: 1rem;
+  font-size: xx-large;
+}
+
+.about-right div{
+  margin-bottom: 1.5rem;
+
 }

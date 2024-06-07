@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    line-height: 2rem;
+    line-height: 2.2rem;
     padding: 0;
     margin: 0;
     font-family:$TextFont;
@@ -29,10 +29,23 @@ body {
 }
 
 #landing {
-    background-image: $landing-page-image;
+    background-image: url($landing-page-image);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
 }
+#landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px); 
+  }
 
 #about {
     background-color: $PrimaryBeige;

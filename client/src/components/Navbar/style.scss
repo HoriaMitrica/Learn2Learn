@@ -30,7 +30,7 @@
 
   font-family: globalVariables.$GulfDisplay;
   text-transform: uppercase;
-  font-size: medium;
+  font-size: large;
   text-align: center;
 
 }
@@ -59,7 +59,7 @@
   flex-direction: row;
   overflow: hidden;
   user-select: none;
-  height: 4em;
+  height: 5em;
 
   &.nav-visible {
     height: 100%;
@@ -69,8 +69,8 @@
 
 .nav {
   display: flex;
-  height: 4em;
-  line-height: 4em;
+  height: 5em;
+  line-height: 5em;
   flex-grow: 1;
 }
 
