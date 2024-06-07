@@ -1,27 +1,45 @@
 
+import { useState, useEffect, ReactNode } from 'react';
+import { CourseProps } from '../../models/courses';
 import './style.scss'
+import { Course } from '../Course';
 
 export const Courses = () => {
+
+    const [courses, setCourses] = useState<CourseProps[]>([]);
+
+    useEffect(() => {
+        fetchVideos();
+    }, []);
+
+    const fetchVideos = async () => {
+        try {
+            const response = await fetch('/json/courses.json');
+            const data: CourseProps[] = await response.json();
+            setCourses(data);
+        } catch (error) {
+            console.error('Error fetching videos:', error);
+        }
+    };
+
+    const GenerateCourses = ():ReactNode => {
+        return (
+            <>
+            <div className="videos-grid">
+                    {courses.map(course => (
+                        <Course key={course.id} {...course} />
+                    ))}
+            </div>
+            </>
+        )
+    }
     return (
         <>
             <section id={'courses'} className="main">
-        <div>
-        Cursuri incluse
-Engleză
-Familiarizarea cu examenele Cambridge (Flyers, KET, PET etc.)
-Engleza predată de profesor cu accent nativ
-Engleza predată aplicat pentru dezvoltarea abilităților de comunicare în diferite situații de viață
-Copiii învață sã gândeascã în limba engleză si să formuleze opinii în cadrul dezbaterilor pe diferite teme de interes pentru vârsta lor
-Matematică
-Cursuri de performanță pentru clasele a Ill-a si a IV-a
-Matematica predată cu ajutorul miturilor din Grecia antică
-O metodă unică de predare, gândită special pentru a „îmblânzi” matematica
-Book Club
-Fiind un „acasă” pentru copii, se pot bucura de o bibliotecă diversă, cu volume atât în limba română cât și în limba engleză
-Creăm o ambianță plăcută pentru a stimula lectura si dezbaterea subiectului cărților citite
-Cerc de Mitologie
-Cunoașterea marilor mituri, de la Calul Troian la Isis si Osiris
-        </div>
+                <div>
+                <h1 className="title-smaller main">C u r s u r i</h1>
+                {GenerateCourses()}
+                </div>
             </section>
         </>
     )

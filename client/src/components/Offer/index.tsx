@@ -5,7 +5,7 @@ export const Offer = () => {
         <>
             <section id="offer" className="main">
                 <div >
-                    <h1 className="title-smaller main">Oferta</h1>
+                    <h1 className="title-smaller main">O f e r t a</h1>
                     <div className="main">
                         <div className="program-card">
                             <h2>PROGRAM SCURT (3 ORE)</h2>

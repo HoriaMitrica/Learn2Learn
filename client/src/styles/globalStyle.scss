@@ -58,9 +58,15 @@ body {
 }
 
 #articles {
-    background-color: red;
+    background-color:$PrimaryRed;
+}
+#courses{
+    background-color: $SecondaryRed;
 }
 
+#offer{
+    background-color: $Orange   ;
+}
 #contact {
     background-color: $PrimaryGreen;
     height: 100vh;
