@@ -2,9 +2,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: x-large;
+
     gap: 20px; 
-    justify-items: center; 
-    align-items: center; 
+
+
     .image{
         width:20rem;
         height:auto;

@@ -1,6 +1,19 @@
 .video{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
 }
+
+.iframe-container {
+    border: "none";
+    width: 400px; 
+    height: 250px;
+}
+
+.text-container {
+    max-width: 400px;
+    word-wrap: break-word; 
+    text-align: center; 
+}
+
+
+
+
