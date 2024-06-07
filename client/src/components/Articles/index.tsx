@@ -4,9 +4,9 @@ export const Articles = () => {
     return (
         <>
             <section id="articles" className="main">
-<div>
-    AASDSADASDAS
-</div>
+<h1>
+    Articole
+</h1>
             </section>
         </>
     )

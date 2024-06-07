@@ -1,0 +1,30 @@
+.main.contact-text {
+    color: white;
+
+    .contact-left, .contact-right {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-left {
+        margin-right: 1rem; 
+    }
+
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; // 16:9 aspect ratio
+        height: 0;
+
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+}
