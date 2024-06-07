@@ -2,11 +2,16 @@
 @use '../../styles/mediaQuery.scss';
 
 
-.testingMedia{
 
-    @include mediaQuery.flex-center;
-    font-family: globalVariables.$TextFont;
-    @include mediaQuery.respond-to(small) {
-        color:aqua;
-      }
+.text-left{
+  width:40vw;
+}
+.image{
+  width:40vw;
+  height:auto;
+  
+}
+.text-right{
+  width:50vw;
+  font-size: x-large;
 }

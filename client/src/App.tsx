@@ -16,8 +16,7 @@ function App() {
     <About/>
     <MediaAparitions/>
     <Articles/>
-    <Courses id={'included_courses'}/>
-    <Courses id={'optional_courses'}/>
+    <Courses/>
     <Offer/>
     <Contact/>
     </>

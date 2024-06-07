@@ -1,0 +1,13 @@
+@use "../../styles/globalStyle.scss";
+@use "../../styles/globalVariables.scss";
+
+.title{
+    font-size: globalVariables.$font-size-xx-large;
+    font-family: globalVariables.$BoldStrom;
+    z-index: 1;
+}
+
+.subtitle{
+    font-size: globalVariables.$font-size-large;
+    z-index: 1;
+}

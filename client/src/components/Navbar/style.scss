@@ -4,13 +4,14 @@
 .logo-img {
   width: 64px;
   height: auto;
-  margin-left: 2em;
+  margin-left: 1em;;
   margin-top: 0.25em;
 }
 
-.link{
-  cursor:pointer;
+.link {
+  cursor: pointer;
 }
+
 #nav-wrapper {
   overflow: hidden;
   width: 100%;
@@ -20,49 +21,50 @@
   left: 0;
   z-index: 100;
 }
-.nav-small-screen{
+
+.nav-small-screen {
   height: auto;
 }
-.nav-link {
+
+.nav-link-span{
+
+  font-family: globalVariables.$GulfDisplay;
   text-transform: uppercase;
+  font-size: medium;
   text-align: center;
+
 }
-.nav-link.active{
-  color:globalVariables.$TextFont;
-  background: -webkit-linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
-  background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
- 
+.nav-link {
+  transform: skew(-20deg);
+  &:hover:not(.active) {
+    color: globalVariables.$FontColor;
+    background: globalVariables.$SecondaryBlue;
+  }
+  
+  &:last-child {
+    padding-right: 3em;
+  }
+  
+  &.active {
+    color: globalVariables.$TextFont;
+    background: -webkit-linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+    background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+  }
 }
-    .nav-link-span {
-      transform: skew(20deg);
-      display: inline-block;
-    }
-  
-    .nav-link {
-      transform: skew(-20deg);
-      color: globalVariables.$FontColor;
-      text-decoration: none;
-    }
-    .nav-link:last-child {
-      padding-right: 3em;
-    }
-  
-    a:hover.nav-link:not(.active) {
-      color: globalVariables.$FontColor;
-      background: globalVariables.$SecondaryBlue;
-      
-    }
+
+
 #nav {
-   background-color: globalVariables.$PrimaryBlue;
+  background-color: globalVariables.$PrimaryBlue;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   user-select: none;
-  height:4em;
-}
-#nav.nav-visible {
-  height: 100%;
-  overflow: auto;
+  height: 4em;
+
+  &.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 .nav {
@@ -86,16 +88,12 @@
   height: auto;
 }
 
-.gradient {
-  background: globalVariables.$PrimaryYellow; 
-  height:4em;
-  position: relative;
-  right: 1em;
-  margin-right: auto;
-}
-.gradient:hover {
-  animation-name: logo-hover;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+
+@keyframes navbar-hover {
+  10% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
 }

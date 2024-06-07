@@ -6,9 +6,11 @@ html {
 }
 
 body {
-    line-height: 1.5em;
+    line-height: 2rem;
     padding: 0;
     margin: 0;
+    font-family:$TextFont;
+    color:$FontColor
 }
 
 .skew {
@@ -27,11 +29,13 @@ body {
 }
 
 #landing {
-    height: 100vh;
+    background-image: $landing-page-image;
+    flex-direction: column;
+    height: 50vh;
 }
 
 #about {
-    background-color: $PrimaryRed;
+    background-color: $PrimaryBeige;
     height: 100vh;
 }
 
@@ -43,12 +47,8 @@ body {
     height: 100vh;
 }
 
-#included_courses {
-    height: 100vh;
-}
-
-#optional_courses {
-    height: 100vh;
+#courses {
+    height: 200vh;
 }
 
 #offer {

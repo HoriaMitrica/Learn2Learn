@@ -1,10 +1,10 @@
-import { CoursesProps } from '../../models/course'
+
 import './style.scss'
 
-export const Courses: React.FC<CoursesProps> = ({id}) => {
+export const Courses = () => {
     return (
         <>
-            <section id={id} className="main">
+            <section id={'courses'} className="main">
         <div>
         Cursuri incluse
 Engleză

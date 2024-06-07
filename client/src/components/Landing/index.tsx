@@ -1,15 +1,16 @@
+
 import "./style.scss"
 
 export const Landing = () => {
   return (
     <>
       <section id="landing" className="main">
-        <h1>
-          Learn to Learn
+        <h1 className="title">
+          Learn 2 Learn
         </h1>
-        <div>
+        <h2 className="subtitle">
           Înscrierile încep de pe 10 iunie!
-        </div>
+        </h2>
       </section>
     </>
   )
