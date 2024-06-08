@@ -4,13 +4,6 @@
   }
   
   @font-face {
-    font-family: "GilroyLight";
-    src: url("/assets/fonts/GilroyLight/GilroyLight.otf") format("opentype"),
-    url("/assets/fonts/GilroyLight/GilroyLight.woff") format("woff"),
-    url("/assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"),
-  }
-  
-  @font-face {
     font-family: "GulfDisplay";
     src:
       url("/assets/fonts/GulfsDisplay/GulfsDisplay.ttf") format("truetype"),
@@ -18,4 +11,17 @@
       url("/assets/fonts/GulfsDisplay/GulfsDisplay.woff2") format("woff2"),
   
   }
-  
+    
+  @font-face {
+    font-family: "GilroyLight";
+    src: url("/assets/fonts/GilroyLight/GilroyLight.otf") format("opentype"),
+    url("/assets/fonts/GilroyLight/GilroyLight.woff") format("woff"),
+    url("/assets/fonts/GilroyLight/GilroyLight.woff2") format("woff2"),
+  }
+
+  @font-face {
+    font-family: "GilroyBold";
+    src: url("/assets/fonts/GilroyBold/GilroyBold.ttf") format("truetype"),
+    url("/assets/fonts/GilroyBold/GilroyBold.woff") format("woff"),
+    url("/assets/fonts/GilroyBold/GilroyBold.woff2") format("woff2"),
+  }

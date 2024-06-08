@@ -4,7 +4,7 @@ export const Offer = () => {
     return (
         <>
             <section id="offer" className="main">
-                <div >
+                <div className="section-end">
                     <h1 className="title-smaller main">O f e r t a</h1>
                     <div className="main">
                         <div className="program-card">

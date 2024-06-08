@@ -8,8 +8,8 @@ export const Landing = () => {
         <h1 className="title">
           Learn 2 Learn
         </h1>
-        <h2 className="subtitle">
-          Înscrierile încep de pe 10 iunie!
+        <h2 className="landing-subtitle">
+          A început sesiunea de înscrieri pentru anul școlar 2024-2025!
         </h2>
       </section>
     </>

@@ -1,15 +1,29 @@
+@use '../../styles/globalVariables.scss';
+@use '../../styles/mediaQuery.scss';
 
 .iframe-container {
-    border: "none";
-    width: 400px; 
-    height: 250px;
+    border: 0;
+    overflow: hidden;
+    width: 350px; 
+    height: 200px;
 }
 
 .text-container {
-    max-width: 400px;
+    margin:1rem;
+    max-width: 40vw;
     word-wrap: break-word; 
     text-align: center; 
 }
+
+.grid-wrapper {
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  
 
 
 

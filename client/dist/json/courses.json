@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "title": "Engleză",
-        "type": "inclus",
+        "title": "Engleză (inclus)",
+
         "description": [
             "Familiarizarea cu examenele Cambridge (Flyers, KET, PET etc.)",
             "Engleza predată de profesor cu accent nativ",
@@ -12,8 +12,7 @@
     },
     {
         "id": 1,
-        "title": "Matematică",
-        "type": "inclus",
+        "title": "Matematică (inclus)",
         "description": [
             "Cursuri de performanță pentru clasele a Ill-a si a IV-a",
             "Matematica predată cu ajutorul miturilor din Grecia antică",
@@ -22,8 +21,7 @@
     },
     {
         "id": 2,
-        "title": "Book Club",
-        "type": "inclus",
+        "title": "Book Club (inclus)",
         "description": [
             "Fiind un „acasă” pentru copii, se pot bucura de o bibliotecă diversă, cu volume atât în limba română cât și în limba engleză",
             "Creăm o ambianță plăcută pentru a stimula lectura si dezbaterea subiectului cărților citite"
@@ -31,72 +29,63 @@
     },
     {
         "id": 3,
-        "title": "Cerc de Mitologie",
-        "type": "inclus",
+        "title": "Cerc de Mitologie (inclus)",
         "description": [
             "Cunoașterea marilor mituri, de la Calul Troian la Isis si Osiris"
         ]
     },  
     {
         "id": 4,
-        "title": "Scriere Creativă",
-        "type": "opțional",
+        "title": "Scriere Creativă (optional)",
         "description": [
             "Nu ne propunem să devenim scriitori, dar ce frumos este să știm să creionăm o poveste, să inventăm personaje sau chiar să scriem despre noi înșine. Avem imaginație, să o punem la treabă! Și nu oricum, îndrumați de doamna profesoară Diana Crăciun, care pune pasiune și dragoste în cuvânt"
         ]
     },
     {
         "id": 5,
-        "title": "Pregătire Examene Cambridge",
-        "type": "opțional",
+        "title": "Pregătire Examene Cambridge (optional)",
         "description": [
             "Pregătire pentru examenele Cambridge (Flyers, KET sau PET)"
         ]
     },
     {
         "id": 6,
-        "title": "Cerc Matematică – Performanță",
-        "type": "opțional",
+        "title": "Cerc Matematică – Performanță (optional)",
         "description": [
             "Matematica predată cu ajutorul mitologiei la un curs distractiv pentru clasa a III-a"
         ]
     },
     {
         "id": 7,
-        "title": "Istoria Artei",
-        "type": "opțional",
+        "title": "Istoria Artei (optional)",
         "description": [
             "O călătorie prin istoria artei"
         ]
     },
     {
         "id": 8,
-        "title": "Pregătire Admitere Colegiu",
-        "type": "opțional",
+        "title": "Pregătire Admitere Colegiu (optional)",
         "description": [
             "Pregătire pentru examenele de admitere la colegiu în clasa a V-a"
         ]
     },
     {
         "id": 9,
-        "title": "Nutriție și Gătit Sănătos",
-        "type": "opțional",
+        "title": "Nutriție și Gătit Sănătos (optional)",
         "description": [
             "Îndrumare spre un stil de viață sănătos"
         ]
     },
     {
         "id": 10,
-        "title": "Muzică și Percuție",
-        "type": "opțional",
+        "title": "Muzică și Percuție (optional)",
         "description": [
             "Cursuri distractive și interactive de muzică și percuție"
         ]
     },
     {
         "id": 11,
-        "title": "Consiliere",
-        "type": "opțional",
+        "title": "Consiliere (optional)",
         "description": [
             "Consiliere privind sănătatea emoțională cu psiholog"
         ]

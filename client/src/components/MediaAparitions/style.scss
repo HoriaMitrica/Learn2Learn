@@ -2,12 +2,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: x-large;
-
+    justify-content: center;
     gap: 20px; 
 
 
     .image{
-        width:20rem;
+
+        width:15rem;
         height:auto;
     }
 }

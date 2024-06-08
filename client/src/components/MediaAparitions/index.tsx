@@ -28,7 +28,7 @@ export const MediaAparitions = () => {
                     {videos.map(video => (
                         <Video key={video.id} {...video} />
                     ))}
-                {videos.length%2!=0?<img src={AssetPaths.Heart} alt="Logo" className="image"/>:<></>}
+                {videos.length%2!=0?<div className="grid-wrapper"><img src={AssetPaths.Love2Learn} alt="Logo" className="image"/></div>:<></>}
             </div>
             </>
         )
@@ -36,7 +36,7 @@ export const MediaAparitions = () => {
     return (
         <>
             <section id="media_aparitions" className="main">
-                <div>
+                <div className="section-end">
                     <h1 className="title-smaller main">Apariții în media & televiziune</h1>
                     {GenerateVideos()}
                 </div>

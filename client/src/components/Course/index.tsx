@@ -1,18 +1,19 @@
+
 import { CourseProps } from "../../models/courses"
-
+import './style.scss'
 export const Course: React.FC<CourseProps> = ({ ...props }) => {
-
-    console.log(props.description);
+    
+    const formattedTitle:string=props.title+" "+"("+props.type+")";
+    
     return (
         <>
             <div>
                 <div className="text-container">
-                    <div>{props.title}</div>
-                    <ul>
+                    <div className="subtitle">{formattedTitle}</div>
+                    <ul className="course-list">
                         {props.description.map((desc, index) => (
                             <li key={index}>{desc}</li>))}
                     </ul>
-
                 </div>
             </div>
         </>

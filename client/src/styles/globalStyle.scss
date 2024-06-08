@@ -42,8 +42,8 @@ body {
     left: 0;
     width: 100%;
     height: 60vh;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
 }
 
 #about {
@@ -53,7 +53,6 @@ body {
 
 #media_aparitions {
     width: 100%;
-    margin-bottom: 1rem;
     background-color: $Grey;
 }
 
@@ -77,4 +76,12 @@ section {
     h1 {
         margin-top: 7.5rem;
     }
+}
+
+.subtitle{
+    font-family:$TextFontBold;
+}
+
+.section-end{
+    margin-bottom: $bottomSpacing;
 }

@@ -35,8 +35,8 @@ export const Courses = () => {
     }
     return (
         <>
-            <section id={'courses'} className="main">
-                <div>
+            <section id='courses' className="main">
+                <div className="section-end">
                 <h1 className="title-smaller main">C u r s u r i</h1>
                 {GenerateCourses()}
                 </div>
