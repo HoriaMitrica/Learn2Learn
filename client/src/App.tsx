@@ -5,7 +5,7 @@ import { Courses } from "./components/Courses"
 import { Landing } from "./components/Landing"
 import { MediaAparitions } from "./components/MediaAparitions"
 import { Navbar } from "./components/Navbar"
-import { Offer } from "./components/Offer"
+import { Offers } from "./components/Offers"
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
     <MediaAparitions/>
     <Articles/>
     <Courses/>
-    <Offer/>
+    <Offers/>
     <Contact/>
     </>
   )
