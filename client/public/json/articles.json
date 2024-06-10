@@ -1,11 +1,6 @@
 [
 
-    {
-        "id": 0,
-        "isLinkGood":true,
-        "link": "https://www.proiectulmerito.ro/aida-frujina",
-        "backupImage":"/assets/backup/articol_merito.png"
-    },
+
     {
         "id": 1,
         "isLinkGood":false,
@@ -17,6 +12,12 @@
         "isLinkGood":false,
         "link": "https://republica.ro/invatatoarea-care-in-timpul-pandemiei-a-cumparat-o-tabla-si-o-camera-video-si-si-a-transformat-bucataria",
         "backupImage":"/assets/backup/articol_republica.png"
+    },
+    {
+        "id": 0,
+        "isLinkGood":false,
+        "link": "https://www.proiectulmerito.ro/aida-frujina",
+        "backupImage":"/assets/backup/articol_merito.png"
     }
 
 ]

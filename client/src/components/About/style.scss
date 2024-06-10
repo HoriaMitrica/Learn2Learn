@@ -17,7 +17,7 @@
   @include mediaQuery.respond-to(xlarge) {
     width: 60vw;
   }
-    @include mediaQuery.respond-to(large) {
+  @include mediaQuery.respond-to(large) {
     width: 80vw;
   }
   @include mediaQuery.respond-to(medium) {
@@ -28,27 +28,26 @@
 .about-right {
   width: 50vw;
   margin-left: 1rem;
-  font-size: xx -large;
+  font-size: xx-large;
   @include mediaQuery.respond-to(xlarge) {
     width: 80vw;
   }
 
-    @include mediaQuery.respond-to(large) {
-      font-size: x-large;
-    }
-    @include mediaQuery.respond-to(medium) {
-      font-size: large;
-    }
-  
+  @include mediaQuery.respond-to(large) {
+    font-size: x-large;
+  }
+  @include mediaQuery.respond-to(medium) {
+    font-size: large;
+  }
 }
 
 .about-right div {
   margin-bottom: 1.5rem;
 }
-#about{
-  .section-start{
-  @include mediaQuery.respond-to(xlarge) {
-    margin-top:0;
-  }
+#about {
+  .section-start {
+    @include mediaQuery.respond-to(xlarge) {
+      margin-top: 0;
+    }
   }
 }

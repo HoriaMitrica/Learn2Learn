@@ -38,8 +38,8 @@ export const Navbar: React.FC = () => {
                     </div>
 
                     <div className='nav right'>
-                        <Link className='link nav-link' to='landing' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
-                            <span className='nav-link-span home-link'>
+                        <Link className='link nav-link home-link' to='landing' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                            <span className='nav-link-span'>
                                 Learn2Learn Education Center
                             </span>
                         </Link>

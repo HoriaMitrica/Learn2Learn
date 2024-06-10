@@ -7,7 +7,9 @@
     background-color: globalVariables.$Grey;
     display: flex;
     flex-direction: column;
-    border: 2px solid #000; 
+    border: 1px solid globalVariables.$FontColor;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 30vw;
     margin: 10px;

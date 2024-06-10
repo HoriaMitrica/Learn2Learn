@@ -23,6 +23,7 @@
 
 .landing-subtitle{
     text-align: center;
+    font-family: globalVariables.$TextFontBold;
     font-size: globalVariables.$font-size-large;
     z-index: 1;
     @include mediaQuery.respond-to(large)

@@ -1,3 +1,4 @@
+import { ContactForm } from '../ContactForm'
 import './style.scss'
 
 export const Contact = () => {
@@ -6,6 +7,7 @@ export const Contact = () => {
             <section id="contact"  className="main">
                 <div className="section-end">
                 <h1 className="title-smaller main contact-text">C o n t a c t</h1>
+                <ContactForm/>
                 <div className=" main contact-text">
                     <div className="contact-left">
                         <div style={{ fontSize: "x-large" }}>

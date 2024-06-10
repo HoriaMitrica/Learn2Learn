@@ -7,3 +7,9 @@ export enum AssetPaths{
     Bulby="/assets/characters/Bulby.png",
     Genially="/assets/characters/Genially.png",
 }   
+
+export enum EmailJsInfo{
+    Service_id="service_le8lcvr",
+    Acc_public_key="0lAltdHkIfr8DEc74",
+    Template_id="template_kz4p77e"
+}
