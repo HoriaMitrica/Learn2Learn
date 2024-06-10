@@ -41,6 +41,7 @@ export const Offers = () => {
                     <h1 className="title-smaller main">O f e r t a</h1>
                     {GenerateOffers()}
                 </div>
+                <div className="gradient-transition"></div>
             </section>
         </>
     )

@@ -6,8 +6,18 @@ import { useRef } from "react";
 import { CONTACT_LINK_OFFSET, SCROLL_DURATION } from "../../constants/constants";
 
 export const Navbar: React.FC = () => {
-    const navRef = useRef<HTMLElement>(null);
+    let clicked: boolean = false;
 
+    const navRef = useRef<HTMLElement>(null);
+    const showNavbar = () => {
+        if (navRef.current) {
+            if (clicked)
+                navRef.current.style.height = 'auto';
+            else
+                navRef.current.style.height = '4em';
+        }
+        clicked = !clicked;
+    }
     return (
         <>
             <header id='nav-wrapper'>
@@ -16,10 +26,13 @@ export const Navbar: React.FC = () => {
                         <Link className='link' to='landing' spy={true} smooth={true} offset={0} duration={100}>
                             <img src={AssetPaths.Logo} alt="Logo" className="logo-img" />
                         </Link>
+                        <button className='btn-nav' onClick={showNavbar}>Learn2Learn Education Center
+                            <span className="fa fa-bars"></span>
+                        </button>
                     </div>
 
                     <div className='nav right'>
-                        <Link className='link nav-link home-link' to='landing' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link className='link nav-link' to='landing' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span home-link'>
                                 Learn2Learn Education Center
                             </span>

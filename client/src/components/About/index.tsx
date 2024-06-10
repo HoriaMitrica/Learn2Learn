@@ -5,6 +5,7 @@ export const About = () => {
     return (
         <>
             <section id="about" className="main">
+               
                 <div className=" about-left">
                     <h1 className="title-smaller main">Despre noi</h1>
                     <img src={AssetPaths.AllCharactersLogo} alt="Logo" className="image" />
@@ -17,6 +18,7 @@ export const About = () => {
                         Într-o lume în permanentă schimbare, învățarea este singura constantă. De aceea, Learn2Learn este un loc unde copiii învață să învețe, într-o locație primitoare, „ca acasă”, având ca spațiu de desfășurare două vile generoase și două curți cu spațiu de joacã de 400 mp. Copiii au parte de asistență și îndrumare la teme, ateliere si activități opționale variate si captivante, pentru o educație completă, cu grijă pentru minte, corp și suflet.
                     </div>
                 </div>
+                <div className="gradient-transition-bottom"></div>
             </section>
         </>
     )

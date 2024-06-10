@@ -33,6 +33,7 @@ export const Articles = () => {
                         </a>
                     </div>
                 </div>
+                <div className="gradient-transition"></div>
             </section>
         </>
     )

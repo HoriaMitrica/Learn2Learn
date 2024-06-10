@@ -6,6 +6,7 @@ import { Landing } from "./components/Landing"
 import { MediaAparitions } from "./components/MediaAparitions"
 import { Navbar } from "./components/Navbar"
 import { Offers } from "./components/Offers"
+import "./styles/globalStyle.scss"
 
 function App() {
 

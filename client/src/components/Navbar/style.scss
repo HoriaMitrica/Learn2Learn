@@ -16,15 +16,25 @@
 #nav-wrapper {
   overflow: hidden;
   width: 100%;
-  margin: 1 auto;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
 }
 
-.nav-small-screen {
-  height: auto;
+.btn-nav{
+  display:none;
+  @include mediaQuery.respond-to(medium){
+    font-family: globalVariables.$GulfDisplay;
+    font-size: large;
+    display:block;
+    background-color: globalVariables.$SecondaryBlue;
+    width:300px;
+    margin-left:auto;
+    left:1rem;
+  }
+
 }
 
 .nav-link-span{
@@ -37,6 +47,7 @@
 }
 .nav-link {
   transform: skew(-20deg);
+  border-top:0.5px solid globalVariables.$SecondaryBlue;
   &:hover:not(.active) {
     color: globalVariables.$FontColor;
     background: globalVariables.$SecondaryBlue;
@@ -54,8 +65,10 @@
     background: -webkit-linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
     background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
   }
+  @include mediaQuery.respond-to(medium){
+    transform: skew(0);
+  }
 }
-
 
 
 #nav {
@@ -64,33 +77,40 @@
   flex-direction: row;
   overflow: hidden;
   user-select: none;
-  height: 5em;
+  height: 4em;
 
   &.nav-visible {
     height: 100%;
     overflow: auto;
   }
+  @include mediaQuery.respond-to(medium){
+    flex-direction: column;
+  }
 }
 
 .nav {
   display: flex;
-  height: 5em;
-  line-height: 5em;
+  height: 4em;
+  line-height: 4em;
   flex-grow: 1;
 }
 
 .nav-link,
 .logo {
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .right {
+  display: flex;
   overflow: hidden;
-  flex-direction: row;
-  justify-content: flex-end;
+
   position: relative;
   left: 1.5em;
   height: auto;
+  @include mediaQuery.respond-to(medium){
+    flex-direction: column;
+    height:100%;
+  }
 }
 
 

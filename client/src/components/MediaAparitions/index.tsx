@@ -21,15 +21,15 @@ export const MediaAparitions = () => {
             console.error('Error fetching videos:', error);
         }
     };
-    const GenerateVideos = ():ReactNode => {
+    const GenerateVideos = (): ReactNode => {
         return (
             <>
-            <div className="video-grid">
+                <div className="video-grid">
                     {videos.map(video => (
                         <Video key={video.id} {...video} />
                     ))}
-                {videos.length%2!=0?<div className="grid-wrapper"><img src={AssetPaths.Ruler} alt="Logo" className="image"/></div>:<></>}
-            </div>
+                    {videos.length % 2 != 0 ? <div className="grid-wrapper"><img src={AssetPaths.Ruler} alt="Logo" className="image" /></div> : <></>}
+                </div>
             </>
         )
     }
@@ -40,6 +40,7 @@ export const MediaAparitions = () => {
                     <h1 className="title-smaller main">Apariții în media & televiziune</h1>
                     {GenerateVideos()}
                 </div>
+                <div className="gradient-transition"></div>
             </section>
         </>
     )

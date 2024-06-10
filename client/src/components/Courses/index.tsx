@@ -22,14 +22,14 @@ export const Courses = () => {
         }
     };
 
-    const GenerateCourses = ():ReactNode => {
+    const GenerateCourses = (): ReactNode => {
         return (
             <>
-            <div className="video-grid">
+                <div className="video-grid">
                     {courses.map(course => (
                         <Course key={course.id} {...course} />
                     ))}
-            </div>
+                </div>
             </>
         )
     }
@@ -37,9 +37,10 @@ export const Courses = () => {
         <>
             <section id='courses' className="main">
                 <div className="section-end">
-                <h1 className="title-smaller main">C u r s u r i</h1>
-                {GenerateCourses()}
+                    <h1 className="title-smaller main">C u r s u r i</h1>
+                    {GenerateCourses()}
                 </div>
+                <div className="gradient-transition"></div>
             </section>
         </>
     )

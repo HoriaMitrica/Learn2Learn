@@ -8,7 +8,7 @@ export const Offer: React.FC<OfferProps> = ({ ...props }) => {
             <div className="offer-container">
                 <div className="subtitle">{props.title}</div>
                 <img className="offer-sublist" src={AssetPaths[props.mascot as keyof typeof AssetPaths]} alt="Logo" />
-                <div className="offer-sublist">Preț: {props.price}/lună</div>
+                <div className="offer-sublist">Preț: {props.price} RON / lună</div>
                 <div>Program:
                     <ul>
                         {props.schedule.map((timeFrame, index) => (
@@ -22,6 +22,7 @@ export const Offer: React.FC<OfferProps> = ({ ...props }) => {
                     </ul>
                 </div>
             </div>
+            <div className="gradient-transition"></div>
         </>
     )
 }
