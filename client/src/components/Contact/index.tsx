@@ -4,7 +4,7 @@ export const Contact = () => {
     return (
         <>
             <section id="contact"  className="main">
-                <div>
+                <div className="section-end">
                 <h1 className="title-smaller main contact-text">C o n t a c t</h1>
                 <div className=" main contact-text">
                     <div className="contact-left">

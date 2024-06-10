@@ -1,5 +1,6 @@
 @use "../../styles/globalStyle.scss";
 @use "../../styles/globalVariables.scss";
+@use '../../styles/mediaQuery.scss';
 
 .logo-img {
   width: 64px;
@@ -40,7 +41,10 @@
     color: globalVariables.$FontColor;
     background: globalVariables.$SecondaryBlue;
   }
-  
+  &:not(.active)
+  {
+    background: globalVariables.$PrimaryBlue;
+  }
   &:last-child {
     padding-right: 3em;
   }
@@ -51,6 +55,7 @@
     background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
   }
 }
+
 
 
 #nav {
@@ -95,5 +100,11 @@
   }
   100% {
     padding-right: 5em;
+  }
+}
+
+.home-link{
+  @include mediaQuery.respond-to(xlarge) {
+    display: none;
   }
 }

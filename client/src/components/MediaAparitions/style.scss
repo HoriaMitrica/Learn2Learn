@@ -1,15 +1,18 @@
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: x-large;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 
-
-    .image{
-
-        width:15rem;
-        height:auto;
+    @include mediaQuery.respond-to(large) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image {
+        width: 15rem;
+        height: auto;
     }
 }
-

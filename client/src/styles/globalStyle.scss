@@ -25,6 +25,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond-to(xlarge) {
+        flex-direction: column;
+    }
 }
 
 #landing {
@@ -34,6 +37,12 @@ body {
     background-position: center;
     flex-direction: column;
     height: 60vh;
+    @include respond-to(medium){
+        background-size: auto 100%;
+        height: 80vh;
+    }
+
+
 }
 #landing::before {
     content: "";
@@ -44,31 +53,32 @@ body {
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(2px);
+    @include respond-to(medium){
+        height: 80vh;
+    }
+
 }
 
 #about {
-    height: 100vh;
     background-color: $PrimaryBeige;
 }
 
 #media_aparitions {
-    width: 100%;
-    background-color:$PrimaryYellow;
+    background-color: $PrimaryYellow;
 }
 
 #articles {
-    background-color:$PrimaryRed;
+    background-color: $PrimaryRed;
 }
-#courses{
+#courses {
     background-color: $SecondaryRed;
 }
 
-#offer{
+#offer {
     background-color: $Orange;
 }
 #contact {
     background-color: $PrimaryGreen;
-    height: 100vh;
 }
 
 section {
@@ -78,10 +88,13 @@ section {
     }
 }
 
-.subtitle{
-    font-family:$TextFontBold;
+.subtitle {
+    font-family: $TextFontBold;
 }
 
-.section-end{
+.section-end {
     margin-bottom: $bottomSpacing;
+}
+.section-start{
+    margin-top: $bottomSpacing;
 }

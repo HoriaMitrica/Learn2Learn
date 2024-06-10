@@ -4,8 +4,18 @@
 .iframe-container {
     border: 0;
     overflow: hidden;
-    width: 350px; 
-    height: 200px;
+    width: 80%;
+    height: 300px;
+    
+    @include mediaQuery.respond-to(xlarge){
+        height:200px;
+    }
+    @include mediaQuery.respond-to(large){
+        height: 400px;
+    }
+    @include mediaQuery.respond-to(medium){
+        height: 300px;
+    }
 }
 
 .text-container {
@@ -13,6 +23,12 @@
     max-width: 40vw;
     word-wrap: break-word; 
     text-align: center; 
+    
+    @include mediaQuery.respond-to(large){
+        max-width: 95vw;
+        align-items: center;
+    }
+
 }
 
 .grid-wrapper {

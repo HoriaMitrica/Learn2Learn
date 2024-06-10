@@ -6,16 +6,27 @@
 .title-smaller{
   font-family: globalVariables.$GulfDisplay;
   font-size: globalVariables.$font-size-x-large;
+
 }
 .image{
   width:40vw;
   height:auto;
+  @include mediaQuery.respond-to(xlarge) {
+    width:60vw;
+}
   
 }
 .about-right{
   width:50vw;
   margin-left: 1rem;
   font-size: xx-large;
+  @include mediaQuery.respond-to(xlarge) {
+    width:80vw;
+}
+@include mediaQuery.respond-to(large) {
+  background-color: red;
+}
+
 }
 
 .about-right div{
