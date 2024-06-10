@@ -1,12 +1,23 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import './style.scss';
 import { EmailJsInfo } from '../../models/enum';
 
 export const ContactForm: React.FC = () => {
 
-    const form = useRef<HTMLFormElement>(null); 
-
+    const form = useRef<HTMLFormElement>(null);
+    const [formData, setFormData] = useState({
+        user_name: '',
+        user_email: '',
+        message: ''
+    });
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prevFormData => ({
+            ...prevFormData,
+            [name]: value
+        }));
+    };
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
@@ -16,20 +27,29 @@ export const ContactForm: React.FC = () => {
                 .then(
                     (result: EmailJSResponseStatus) => {
                         console.log('SUCCESS!', result.text);
+                        setFormData({
+                            user_name: '',
+                            user_email: '',
+                            message: ''
+                        });
+                        alert("Mesajul a fost trimis!");
                     }
                 );
         }
     };
 
+
     return (
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <label>Name</label>
-            <input type="text" name="user_name" required />
-            <label>Email</label>
-            <input type="email" name="user_email" required />
-            <label>Message</label>
-            <textarea name="message" required />
-            <input type="submit" value="Send" />
-        </form>
+        <>
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
+                <label>Nume</label>
+                <input type="text" name="user_name" value={formData.user_name} onChange={handleChange} required />
+                <label>Email</label>
+                <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required />
+                <label>Mesaj</label>
+                <textarea name="message" value={formData.message} onChange={handleChange} required />
+                <input type="submit" value="Send" />
+            </form>
+        </>
     );
 };
