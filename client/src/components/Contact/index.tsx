@@ -5,9 +5,11 @@ export const Contact = () => {
     return (
         <>
             <section id="contact"  className="main">
-                <div className="section-end">
+                <div className="section-start section-start section-end">
+                    <div>
                 <h1 className="title-smaller main contact-text">C o n t a c t</h1>
                 <ContactForm/>
+                </div>
                 <div className=" main contact-text">
                     <div className="contact-left">
                         <div style={{ fontSize: "x-large" }}>

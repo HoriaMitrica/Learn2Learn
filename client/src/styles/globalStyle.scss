@@ -33,14 +33,11 @@ body {
 #landing {
     background-image: url($landing-page-image);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% auto ;
     background-position: center;
     flex-direction: column;
-    height: 60vh;
-    @include respond-to(medium) {
-        background-size: auto 100%;
-        height: 80vh;
-    }
+    height: auto;
+
 }
 #landing::before {
     content: "";
@@ -51,9 +48,6 @@ body {
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(2px);
-    @include respond-to(medium) {
-        height: 80vh;
-    }
 }
 
 #about {
@@ -90,7 +84,7 @@ body {
     }
 }
 #contact {
-    height:110vh;
+
     background-color: $PrimaryGreen;
 }
 
