@@ -7,17 +7,15 @@ export const Offer: React.FC<OfferProps> = ({ ...props }) => {
         <>
             <div className="offer-container">
                 <div className="subtitle">{props.title}</div>
-                <div className="main">
-                    <div>Preț: {props.price}/lună</div>
-                    <img src={AssetPaths[props.mascot as keyof typeof AssetPaths]} alt="Logo" />
-                </div>
-                <div className="offer-sublist">Program:
+                <img className="offer-sublist" src={AssetPaths[props.mascot as keyof typeof AssetPaths]} alt="Logo" />
+                <div className="offer-sublist">Preț: {props.price}/lună</div>
+                <div>Program:
                     <ul>
                         {props.schedule.map((timeFrame, index) => (
                             <li key={index}>{timeFrame}</li>))}
                     </ul>
                 </div>
-                <div className="offer-sublist">Beneficii:
+                <div >Beneficii:
                     <ul>
                         {props.benefits.map((benefit, index) => (
                             <li key={index}>{benefit}</li>))}

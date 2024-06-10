@@ -1,14 +1,20 @@
 @use "../../styles/globalStyle.scss";
 @use "../../styles/globalVariables.scss";
+@use '../../styles/mediaQuery.scss';
 
   
   .offer-container {
     background-color: globalVariables.$Grey;
+    display: flex;
+    flex-direction: column;
     border: 2px solid #000; 
     padding: 20px;
-    width: auto;
+    width: 30vw;
     margin: 10px;
+    @include mediaQuery.respond-to(large) {
+      width: 50vw;
 
+  }
     ul {
       list-style: none;
       padding: 0;
@@ -28,10 +34,15 @@
       }
     }
     img{
-      height:10rem;
-      width:auto;
+      align-self: center;
+      height:auto;
+      width:150px;
     }
     .subtitle{
       text-align: center;
     }
+  }
+  .offer-sublist{
+    text-align: center;
+    align-items: center;
   }

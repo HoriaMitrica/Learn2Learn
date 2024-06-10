@@ -1,5 +1,6 @@
 @use "../../styles/globalVariables.scss";
 @use "../../styles/mediaQuery.scss";
+@use '../../styles/mediaQuery.scss';
 
 .video-grid {
     display: grid;
@@ -10,7 +11,9 @@
 
     @include mediaQuery.respond-to(large) {
         grid-template-columns: repeat(1, 1fr);
+        width:50vw;
     }
+
     .image {
         width: 15rem;
         height: auto;
