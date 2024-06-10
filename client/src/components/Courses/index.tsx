@@ -25,7 +25,7 @@ export const Courses = () => {
     const GenerateCourses = ():ReactNode => {
         return (
             <>
-            <div className="videos-grid">
+            <div className="video-grid">
                     {courses.map(course => (
                         <Course key={course.id} {...course} />
                     ))}

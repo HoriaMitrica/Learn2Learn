@@ -7,7 +7,6 @@ export const Course: React.FC<CourseProps> = ({ ...props }) => {
     
     return (
         <>
-            <div>
                 <div className="text-container">
                     <div className="subtitle">{formattedTitle}</div>
                     <ul className="course-list">
@@ -15,7 +14,6 @@ export const Course: React.FC<CourseProps> = ({ ...props }) => {
                             <li key={index}>{desc}</li>))}
                     </ul>
                 </div>
-            </div>
         </>
     )
 }

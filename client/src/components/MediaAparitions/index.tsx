@@ -24,11 +24,11 @@ export const MediaAparitions = () => {
     const GenerateVideos = ():ReactNode => {
         return (
             <>
-            <div className="videos-grid">
+            <div className="video-grid">
                     {videos.map(video => (
                         <Video key={video.id} {...video} />
                     ))}
-                {videos.length%2!=0?<div className="grid-wrapper"><img src={AssetPaths.Love2Learn} alt="Logo" className="image"/></div>:<></>}
+                {videos.length%2!=0?<div className="grid-wrapper"><img src={AssetPaths.Ruler} alt="Logo" className="image"/></div>:<></>}
             </div>
             </>
         )

@@ -5,9 +5,7 @@ import { Offer } from '../Offer';
 
 export const Offers = () => {
 
-    const GenerateOffers=():ReactNode=>{
-
-        const [offers, setOffers] = useState<OfferProps[]>([]);
+    const [offers, setOffers] = useState<OfferProps[]>([]);
 
     useEffect(() => {
         fetchVideos();
@@ -22,12 +20,16 @@ export const Offers = () => {
             console.error('Error fetching videos:', error);
         }
     };
-        
-        return(
+
+    const GenerateOffers = (): ReactNode => {
+
+        return (
             <>
-                {offers.map(offer=>(
-                     <Offer key={offer.id} {...offer} />
-                ))}
+                <div className="video-grid">
+                    {offers.map(offer => (
+                        <Offer key={offer.id} {...offer} />
+                    ))}
+                </div>
             </>
         )
     }
@@ -36,8 +38,8 @@ export const Offers = () => {
         <>
             <section id="offer" className="main">
                 <div className="section-end">
-                <h1 className="title-smaller main">O f e r t a</h1>
-                {GenerateOffers()}
+                    <h1 className="title-smaller main">O f e r t a</h1>
+                    {GenerateOffers()}
                 </div>
             </section>
         </>
