@@ -1,35 +1,47 @@
-@use '../../styles/globalVariables.scss';
-@use '../../styles/mediaQuery.scss';
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
 
-
-
-.title-smaller{
+.title-smaller {
   font-family: globalVariables.$GulfDisplay;
   font-size: globalVariables.$font-size-x-large;
-
+  @include mediaQuery.respond-to(large) {
+    font-size: globalVariables.$font-size-large;
+  }
+  @include mediaQuery.respond-to(medium) {
+    font-size: globalVariables.$font-size-medium;
+  }
 }
-.image{
-  width:40vw;
-  height:auto;
+.image {
+  width: 40vw;
+  height: auto;
   @include mediaQuery.respond-to(xlarge) {
-    width:60vw;
+    width: 60vw;
+  }
 }
-  
-}
-.about-right{
-  width:50vw;
+.about-right {
+  width: 50vw;
   margin-left: 1rem;
   font-size: xx-large;
   @include mediaQuery.respond-to(xlarge) {
-    width:80vw;
-}
-@include mediaQuery.respond-to(large) {
-  background-color: red;
+    width: 80vw;
+  }
+
+    @include mediaQuery.respond-to(large) {
+      font-size: x-large;
+    }
+    @include mediaQuery.respond-to(medium) {
+      font-size: large;
+    }
+  
 }
 
-}
-
-.about-right div{
+.about-right div {
   margin-bottom: 1.5rem;
-
+}
+#about{
+  .section-start{
+  @include mediaQuery.respond-to(xlarge) {
+    margin-top:0;
+  }
+  }
 }

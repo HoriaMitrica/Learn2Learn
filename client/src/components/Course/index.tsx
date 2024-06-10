@@ -9,7 +9,7 @@ export const Course: React.FC<CourseProps> = ({ ...props }) => {
         <>
                 <div className="text-container">
                     <div className="subtitle">{formattedTitle}</div>
-                    <ul className="course-list">
+                    <ul >
                         {props.description.map((desc, index) => (
                             <li key={index}>{desc}</li>))}
                     </ul>

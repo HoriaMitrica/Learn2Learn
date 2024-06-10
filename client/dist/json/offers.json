@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Pachet Bulby",
         "price": "1000",
-        "mascot": "/assets/characters/Bulby.png",
+        "mascot": "Bulby",
         "schedule":["8:00 - 11:00"],
         "benefits":["transport inclus"]
     },
@@ -11,7 +11,7 @@
         "id": 1,
         "title": "Pachet Smarty",
         "price": "1050",
-        "mascot": "/assets/characters/Smarty.png",
+        "mascot": "Smarty",
         "schedule":["11:00 - 15:30"],
         "benefits":["transport inclus","masa inclusă"]
     },
@@ -19,7 +19,7 @@
         "id":2,
         "title": "Pachet Genially",
         "price": "1800",
-        "mascot": "/assets/characters/Genially.png",
+        "mascot": "Genially",
         "schedule":["11:00 - 18:00"],
         "benefits":["transport inclus","masa inclusă"]
     },
@@ -27,7 +27,7 @@
         "id": 3,
         "title": "Pachet Love2Learn",
         "price": "1800",
-        "mascot": "/assets/characters/Love2Learn.png",
+        "mascot": "Love2Learn",
         "schedule":["8:00 - 11:00","14:00 - 18:00"],
         "benefits":["transport inclus","masa inclusă"]
     }
