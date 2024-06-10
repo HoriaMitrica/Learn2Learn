@@ -3,7 +3,7 @@ import { Link } from "react-scroll"
 import { AssetPaths } from "../../models/enum"
 import "./style.scss"
 import { useRef, useState } from "react";
-import { CONTACT_LINK_OFFSET, SCROLL_DURATION } from "../../constants/constants";
+import { SCROLL_DURATION } from "../../constants/constants";
 
 export const Navbar: React.FC = () => {
     const [clicked,setClicked]=useState<boolean>(false);
