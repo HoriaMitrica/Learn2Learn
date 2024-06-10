@@ -111,6 +111,7 @@ section {
     
     h1 {
         margin-top: 7.5rem;
+        text-align: center;
         @include respond-to(large) {
             margin-top: 6rem;
         }

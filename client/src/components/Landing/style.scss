@@ -14,6 +14,10 @@
     {
         font-size: globalVariables.$font-size-large;
     }
+    @include mediaQuery.respond-to(small)
+    {
+        font-size: globalVariables.$font-size-medium;
+    }
     
 }
 
@@ -28,5 +32,9 @@
     @include mediaQuery.respond-to(medium)
     {
         font-size: globalVariables.$font-size-small;
+    }
+    @include mediaQuery.respond-to(small)
+    {
+        font-size: globalVariables.$font-size-x-small;
     }
 }

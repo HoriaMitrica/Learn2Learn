@@ -17,11 +17,18 @@
   @include mediaQuery.respond-to(xlarge) {
     width: 60vw;
   }
+    @include mediaQuery.respond-to(large) {
+    width: 80vw;
+  }
+  @include mediaQuery.respond-to(medium) {
+    width: 90vw;
+  }
 }
+
 .about-right {
   width: 50vw;
   margin-left: 1rem;
-  font-size: xx-large;
+  font-size: xx -large;
   @include mediaQuery.respond-to(xlarge) {
     width: 80vw;
   }

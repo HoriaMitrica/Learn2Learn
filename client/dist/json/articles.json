@@ -1,8 +1,22 @@
 [
+
     {
         "id": 0,
-        "title": "Este sau nu gratuită educația?",
-        "description": "În fața ta - DIGI24",
-        "link": "https://www.proiectulmerito.ro/aida-frujina/embed"
+        "isLinkGood":true,
+        "link": "https://www.proiectulmerito.ro/aida-frujina",
+        "backupImage":"/assets/backup/articol_merito.png"
+    },
+    {
+        "id": 1,
+        "isLinkGood":false,
+        "link": "https://adevarul.ro/stiri-locale/bucuresti/un-sistem-de-predare-iesit-din-tipare-mitologia-2182311.html",
+        "backupImage":"/assets/backup/articol_adevarul.png"
+    },
+    {
+        "id": 2,
+        "isLinkGood":false,
+        "link": "https://republica.ro/invatatoarea-care-in-timpul-pandemiei-a-cumparat-o-tabla-si-o-camera-video-si-si-a-transformat-bucataria",
+        "backupImage":"/assets/backup/articol_republica.png"
     }
+
 ]

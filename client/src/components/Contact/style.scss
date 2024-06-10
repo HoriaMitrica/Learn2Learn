@@ -1,13 +1,24 @@
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
+
 .main.contact-text {
     color: white;
 
     .contact-left, .contact-right {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin:1rem;
     }
-
-    .contact-left {
-        margin-right: 1rem; 
+    .contact-right {
+        height:500px;
+        width: 500px;  
+        @include mediaQuery.respond-to(medium){
+            height:400px;
+            width: 400px;  
+        }
+        @include mediaQuery.respond-to(small){
+            height:300px;
+            width: 300px;  
+        }
     }
 
     .iframe-container {
