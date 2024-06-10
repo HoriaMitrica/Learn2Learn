@@ -2,21 +2,27 @@
 import { Link } from "react-scroll"
 import { AssetPaths } from "../../models/enum"
 import "./style.scss"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { CONTACT_LINK_OFFSET, SCROLL_DURATION } from "../../constants/constants";
 
 export const Navbar: React.FC = () => {
-    let clicked: boolean = false;
+    const [clicked,setClicked]=useState<boolean>(false);
 
     const navRef = useRef<HTMLElement>(null);
     const showNavbar = () => {
         if (navRef.current) {
-            if (clicked)
+            if (!clicked)
                 navRef.current.style.height = 'auto';
             else
                 navRef.current.style.height = '4em';
         }
-        clicked = !clicked;
+        setClicked(!clicked);   
+    }
+    const clickedLink=()=>{
+        if (navRef.current) {
+                navRef.current.style.height = '4em';
+                setClicked(false);
+        }
     }
     return (
         <>
@@ -37,32 +43,32 @@ export const Navbar: React.FC = () => {
                                 Learn2Learn Education Center
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Despre noi
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='media_aparitions' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='media_aparitions' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Apariții media
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='articles' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='articles' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Articole
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='courses' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='courses' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Cursuri
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='offer' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='offer' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Oferta
                             </span>
                         </Link>
-                        <Link className='link nav-link' to='contact' spy={true} smooth={true} offset={CONTACT_LINK_OFFSET} duration={SCROLL_DURATION}>
+                        <Link onClick={clickedLink} className='link nav-link' to='contact' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
                             <span className='nav-link-span'>
                                 Contact
                             </span>
