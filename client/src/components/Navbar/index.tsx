@@ -32,8 +32,8 @@ export const Navbar: React.FC = () => {
                         <Link className='link' to='landing' spy={true} smooth={true} offset={0} duration={100}>
                             <img src={AssetPaths.Logo} alt="Logo" className="logo-img" />
                         </Link>
-                        <button className='btn-nav' onClick={showNavbar}>Learn2Learn Education Center
-                            <span className="fa fa-bars"></span>
+                        <button className='btn-nav' onClick={showNavbar}>
+                            Learn2Learn Education Center
                         </button>
                     </div>
 
