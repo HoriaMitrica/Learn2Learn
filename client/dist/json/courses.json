@@ -10,7 +10,8 @@
             "Copiii învață sã gândeascã în limba engleză si să formuleze opinii în cadrul dezbaterilor pe diferite teme de interes pentru vârsta lor"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 1,
@@ -22,7 +23,8 @@
             "O metodă unică de predare, gândită special pentru a „îmblânzi” matematica"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 2,
@@ -33,7 +35,8 @@
             "Creăm o ambianță plăcută pentru a stimula lectura si dezbaterea subiectului cărților citite"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 3,
@@ -43,7 +46,8 @@
             "Cunoașterea marilor mituri, de la Calul Troian la Isis si Osiris"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 4,
@@ -53,7 +57,8 @@
             "O călătorie prin istoria artei"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 5,
@@ -63,7 +68,8 @@
             "Nu ne propunem să devenim scriitori, dar ce frumos este să știm să creionăm o poveste, să inventăm personaje sau chiar să scriem despre noi înșine. Avem imaginație, să o punem la treabă! Și nu oricum, îndrumați de doamna profesoară Diana Crăciun, care pune pasiune și dragoste în cuvânt"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 6,
@@ -73,7 +79,8 @@
             "Pregătire pentru examenele Cambridge (Flyers, KET sau PET)"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 7,
@@ -83,7 +90,8 @@
             "Matematica predată cu ajutorul mitologiei la un curs distractiv pentru clasa a III-a"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 8,
@@ -93,7 +101,8 @@
             "Pregătire admitere colegii"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 9,
@@ -107,7 +116,8 @@
         ],
         "linkAliases": [
             "@bakeoliv"
-        ]
+        ],
+        "aditionalImages":["assets/logos/instagram_logo_24.png"]
     },
     {
         "id": 10,
@@ -117,7 +127,8 @@
             "Cursuri distractive și interactive de muzică și percuție"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 11,
@@ -127,7 +138,8 @@
             "Consiliere privind sănătatea emoțională cu psiholog"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 12,
@@ -137,7 +149,8 @@
             "Cum construim o revistă? Și alte aventuri jurnalistice cu Cătălina Albeanu"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     },
     {
         "id": 13,
@@ -147,6 +160,7 @@
             "Curs de dans contemporan cu Sofia Sitaru - Barină a Operei Naționale"
         ],
         "aditionalLinks": [],
-        "linkAliases": []
+        "linkAliases": [],
+        "aditionalImages":[]
     }
 ]

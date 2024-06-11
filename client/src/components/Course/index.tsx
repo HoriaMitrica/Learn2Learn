@@ -12,7 +12,7 @@ export const Course: React.FC<CourseProps> = ({ ...props }) => {
                             <li key={index}>{desc}</li>))}
                             {props.linkAliases.length && props.aditionalLinks.length?
                                 props.linkAliases.map((alias,index)=>(
-                                    <li key={index+props.description.length}><a target="_blank" href={props.aditionalLinks[index]}>{alias}</a></li>
+                                    <li key={index+props.description.length}><a target="_blank" href={props.aditionalLinks[index]}><img src={props.aditionalImages[index]}></img>{alias}</a></li>
                                 )):null}
                     </ul>
                 </div>

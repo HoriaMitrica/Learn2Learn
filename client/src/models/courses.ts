@@ -5,4 +5,5 @@ export interface CourseProps {
     description: string[];
     aditionalLinks:string[];
     linkAliases:string[];
+    aditionalImages:string[];
   }
