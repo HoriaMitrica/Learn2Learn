@@ -28,9 +28,9 @@
   @include mediaQuery.respond-to(medium){
     font-family: globalVariables.$GulfDisplay;
     font-size: large;
-    color:globalVariables.$White;
+    color:globalVariables.$FontColor;
     display:block;
-    background-color: globalVariables.$SecondaryBeige;
+    background-color: globalVariables.$SecondaryBlue;
     width:300px;
     margin-left:auto;
     border:none;
