@@ -8,11 +8,12 @@
     font-size: x-large;
     justify-content: center;
     gap: 20px;
-    & > *:only-child {
+    & :only-child {
         grid-column: 1 / -1;
         justify-self: center;
     }
     @include mediaQuery.respond-to(large) {
+        justify-self: center;
         grid-template-columns: repeat(1, 1fr);
 
     }

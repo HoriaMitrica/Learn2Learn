@@ -3,6 +3,7 @@
 
 .article-wrapper {
   position: relative;
+  justify-self: center;
   width: 500px;
   height: 500px;
   @include mediaQuery.respond-to(xlarge){
