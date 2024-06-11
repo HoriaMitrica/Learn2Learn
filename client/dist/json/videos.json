@@ -3,30 +3,42 @@
         "id": 0,
         "title": "Este sau nu gratuită educația?",
         "description": "În fața ta - DIGI24",
+        "isTestimonial":false,
         "link": "https://www.youtube.com/embed/nWpKacVk7Oc?si=N5zp3I6V3FtkJs2I"
     },
     {
         "id": 1,
         "title": "Povestea învățătoarei care transformă cursurile în povești",
         "description": "Neatza cu Răzvan și Dani - Antena 1",
+        "isTestimonial":false,
         "link": "https://www.youtube.com/embed/mxpm8mLnTAU?si=R1Np8GvyJq-KJ5f3"
     },
     {
         "id": 2,
         "title": "Lecție deschisă la clasa în care toate cursurile încep cu povești",
         "description": "Neatza cu Răzvan și Dani - Antena 1",
+        "isTestimonial":false,
         "link": "https://www.youtube.com/embed/hnLhAk6HxzA?si=JLMS2DisqQY8wBhC"
     },
     {
         "id": 3,
         "title": "Alchimia cunoașterii",
         "description": "Azi pentru mâine - TVR2",
+        "isTestimonial":false,
         "link": "https://www.youtube.com/embed/4CS5FKjSI6Q?si=LM5nIjGI69Wha24p"
     },
     {
         "id": 4,
         "title": "Ziua mondială a educației - dascăli care schimbă destine",
         "description": "Educație XXI - Canal 33",
+        "isTestimonial":false,
         "link": "https://www.youtube.com/embed/YhPUaW3o8gM?si=TB05uphSr1XsAF33"
+    },
+    {
+        "id": 5,
+        "title": "Cum se sădește dragostea față de matematică. Olimpicul Internațional David Anghel",
+        "description": " Radio Europa Liberă România",
+        "isTestimonial":true,
+        "link": "https://www.youtube.com/embed/ji0q_rEAse4?si=QR3Jdj9kPj_2-WlN"
     }
 ]

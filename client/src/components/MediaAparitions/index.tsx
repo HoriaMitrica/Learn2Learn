@@ -16,7 +16,7 @@ export const MediaAparitions = () => {
         try {
             const response = await fetch('/json/videos.json');
             const data: VideoProps[] = await response.json();
-            setVideos(data);
+            setVideos(data.filter((video)=>!video.isTestimonial));
         } catch (error) {
             console.error('Error fetching videos:', error);
         }

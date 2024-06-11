@@ -19,14 +19,14 @@
   }
     ul {
       list-style: none;
-      padding: 0;
+      padding: 5px;
       margin-bottom: 1rem;
   
       li {
 
         margin-bottom: 10px;
         position: relative;
-        padding-left: 30px;
+        padding-left: 40px;
   
         &::before {
           content: '❇️ ';

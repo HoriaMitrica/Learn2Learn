@@ -3,4 +3,6 @@ export interface CourseProps {
     title: string;
     type: string;
     description: string[];
+    aditionalLinks:string[];
+    linkAliases:string[];
   }

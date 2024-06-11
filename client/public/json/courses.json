@@ -8,7 +8,9 @@
             "Engleza predată de profesor cu accent nativ",
             "Engleza predată aplicat pentru dezvoltarea abilităților de comunicare în diferite situații de viață",
             "Copiii învață sã gândeascã în limba engleză si să formuleze opinii în cadrul dezbaterilor pe diferite teme de interes pentru vârsta lor"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 1,
@@ -18,7 +20,9 @@
             "Cursuri de performanță pentru clasele a Ill-a si a IV-a",
             "Matematica predată cu ajutorul miturilor din Grecia antică",
             "O metodă unică de predare, gândită special pentru a „îmblânzi” matematica"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 2,
@@ -27,7 +31,9 @@
         "description": [
             "Fiind un „acasă” pentru copii, se pot bucura de o bibliotecă diversă, cu volume atât în limba română cât și în limba engleză",
             "Creăm o ambianță plăcută pentru a stimula lectura si dezbaterea subiectului cărților citite"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 3,
@@ -35,54 +41,72 @@
         "type": "inclus",
         "description": [
             "Cunoașterea marilor mituri, de la Calul Troian la Isis si Osiris"
-        ]
-    },  
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
+    },
     {
         "id": 4,
+        "title": "Istoria Artei",
+        "type": "inclus",
+        "description": [
+            "O călătorie prin istoria artei"
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
+    },
+    {
+        "id": 5,
         "title": "Scriere Creativă",
         "type": "opțional",
         "description": [
             "Nu ne propunem să devenim scriitori, dar ce frumos este să știm să creionăm o poveste, să inventăm personaje sau chiar să scriem despre noi înșine. Avem imaginație, să o punem la treabă! Și nu oricum, îndrumați de doamna profesoară Diana Crăciun, care pune pasiune și dragoste în cuvânt"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Pregătire Examene Cambridge",
         "type": "opțional",
         "description": [
             "Pregătire pentru examenele Cambridge (Flyers, KET sau PET)"
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Cerc Matematică – Performanță",
-        "type": "opțional",
-        "description": [
-            "Matematica predată cu ajutorul mitologiei la un curs distractiv pentru clasa a III-a"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 7,
-        "title": "Istoria Artei",
+        "title": "Cerc Matematică – Performanță cu Aida Frujină",
         "type": "opțional",
         "description": [
-            "O călătorie prin istoria artei"
-        ]
+            "Matematica predată cu ajutorul mitologiei la un curs distractiv pentru clasa a III-a"
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 8,
-        "title": "Pregătire Admitere Colegiu",
-        "type": "opțional",
+        "title": "Scriere Creativă",
+        "type": "opțional clasa a IV-a",
         "description": [
-            "Pregătire pentru examenele de admitere la colegiu în clasa a V-a"
-        ]
+            "Pregătire admitere colegii"
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 9,
         "title": "Nutriție și Gătit Sănătos",
         "type": "opțional",
         "description": [
-            "Îndrumare spre un stil de viață sănătos"
+            "Curs de nutriție și gătit sănătos cu Olivia Niță"
+        ],
+        "aditionalLinks": [
+            "https://www.instagram.com/bakeoliv/?hl=en"
+        ],
+        "linkAliases": [
+            "@bakeoliv"
         ]
     },
     {
@@ -91,7 +115,9 @@
         "type": "opțional",
         "description": [
             "Cursuri distractive și interactive de muzică și percuție"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     },
     {
         "id": 11,
@@ -99,7 +125,28 @@
         "type": "opțional",
         "description": [
             "Consiliere privind sănătatea emoțională cu psiholog"
-        ]
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
+    },
+    {
+        "id": 12,
+        "title": "Jurnalism",
+        "type": "opțional",
+        "description": [
+            "Cum construim o revistă? Și alte aventuri jurnalistice cu Cătălina Albeanu"
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
+    },
+    {
+        "id": 13,
+        "title": "Dans contemporan",
+        "type": "opțional",
+        "description": [
+            "Curs de dans contemporan cu Sofia Sitaru - Barină a Operei Naționale"
+        ],
+        "aditionalLinks": [],
+        "linkAliases": []
     }
-
 ]
