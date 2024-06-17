@@ -1,0 +1,127 @@
+@import "mediaQuery";
+@import "globalVariables";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 2.2rem;
+    padding: 0;
+    margin: 0;
+    font-family: $TextFont;
+    color: $FontColor;
+}
+
+.skew {
+    transform: skew(-20deg);
+}
+
+.un-skew {
+    transform: skew(20deg);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to(xlarge) {
+        flex-direction: column;
+    }
+}
+
+#landing {
+    background-image: url($landing-page-image);
+    background-repeat: no-repeat;
+    background-size: 100% auto ;
+    background-position: center;
+    flex-direction: column;
+    height: auto;
+
+}
+#landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+#about {
+    background-color: $PrimaryBeige;
+    .gradient-transition {
+        background: linear-gradient(to bottom, $PrimaryBeige, $PrimaryYellow);
+    }
+}
+
+#media_aparitions {
+    background-color: $PrimaryYellow;
+    .gradient-transition {
+        background: linear-gradient(to bottom, $PrimaryYellow, $PrimaryRed);
+    }
+}
+
+#articles {
+    background-color: $PrimaryRed;
+    .gradient-transition {
+        background: linear-gradient(to bottom, $PrimaryRed, $SecondaryRed);
+    }
+}
+#courses {
+    background-color: $SecondaryRed;
+    .gradient-transition {
+        background: linear-gradient(to bottom, $SecondaryRed, $Orange);
+    }
+}
+
+#offer {
+    background-color: $Orange;
+    .gradient-transition {
+        background: linear-gradient(to bottom, $Orange, $PrimaryGreen);
+    }
+}
+#contact {
+
+    background-color: $PrimaryGreen;
+}
+
+section {
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+    .gradient-transition {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    h1 {
+        margin-top: 7.5rem;
+        text-align: center;
+        @include respond-to(large) {
+            margin-top: 6rem;
+        }
+        @include respond-to(medium) {
+            margin-top: 5rem;
+        }
+    }
+}
+
+.subtitle {
+    font-family: $TextFontBold;
+}
+
+.section-end {
+    margin-bottom: $bottomSpacing;
+}
+.section-start {
+    margin-top: $bottomSpacing;
+}

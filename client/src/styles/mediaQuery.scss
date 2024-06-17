@@ -1,0 +1,32 @@
+@import "./globalVariables.scss";
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xsmall {
+    @media (max-width: $breakpoint-xsmall) {
+      @content;
+      background-color: $Orange;
+    }
+  } @else if $breakpoint == small {
+    @media (max-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: $breakpoint-medium) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (max-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media (max-width: $breakpoint-xlarge) {
+      @content;
+    }
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

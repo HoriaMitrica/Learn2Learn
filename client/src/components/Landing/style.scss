@@ -1,0 +1,41 @@
+@use "../../styles/globalStyle.scss";
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
+.title{
+    font-size: globalVariables.$font-size-xx-large;
+    font-family: globalVariables.$BoldStrom;
+    z-index: 1;
+    @include mediaQuery.respond-to(large)
+    {
+        font-size: globalVariables.$font-size-x-large;
+    }
+    @include mediaQuery.respond-to(medium)
+    {
+        font-size: globalVariables.$font-size-large;
+    }
+    @include mediaQuery.respond-to(small)
+    {
+        font-size: globalVariables.$font-size-medium;
+    }
+    
+}
+
+.landing-subtitle{
+    text-align: center;
+    font-family: globalVariables.$TextFontBold;
+    font-size: globalVariables.$font-size-large;
+    z-index: 1;
+    @include mediaQuery.respond-to(large)
+    {
+        font-size: globalVariables.$font-size-medium;
+    }
+    @include mediaQuery.respond-to(medium)
+    {
+        font-size: globalVariables.$font-size-small;
+    }
+    @include mediaQuery.respond-to(small)
+    {
+        font-size: globalVariables.$font-size-x-small;
+    }
+}

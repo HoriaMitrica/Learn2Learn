@@ -1,0 +1,33 @@
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: x-large;
+    justify-content: center;
+    gap: 20px;
+    & :only-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    @include mediaQuery.respond-to(large) {
+        justify-self: center;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    @include mediaQuery.respond-to(medium) {
+        font-size: large;
+
+    }
+    @include mediaQuery.respond-to(small) {
+        font-size: medium;
+
+    }
+
+    .image {
+        width: 15rem;
+        height: auto;
+    }
+}

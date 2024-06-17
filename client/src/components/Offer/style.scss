@@ -1,0 +1,50 @@
+@use "../../styles/globalStyle.scss";
+@use "../../styles/globalVariables.scss";
+@use '../../styles/mediaQuery.scss';
+
+  
+  .offer-container {
+    background-color: globalVariables.$Grey;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid globalVariables.$FontColor;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30vw;
+    margin: 10px;
+    @include mediaQuery.respond-to(large) {
+      width: 50vw;
+
+  }
+    ul {
+      list-style: none;
+      padding: 5px;
+      margin-bottom: 1rem;
+  
+      li {
+
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 40px;
+  
+        &::before {
+          content: '❇️ ';
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    img{
+      align-self: center;
+      height:auto;
+      width:150px;
+    }
+    .subtitle{
+      text-align: center;
+    }
+  }
+  .offer-sublist{
+    text-align: center;
+    align-items: center;
+  }

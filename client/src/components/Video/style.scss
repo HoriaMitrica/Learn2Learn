@@ -1,0 +1,46 @@
+@use '../../styles/globalVariables.scss';
+@use '../../styles/mediaQuery.scss';
+
+.iframe-container {
+    border: 0;
+    overflow: hidden;
+    width: 80%;
+    height: 300px;
+    
+    @include mediaQuery.respond-to(xlarge){
+        height:200px;
+    }
+    @include mediaQuery.respond-to(large){
+        height: 400px;
+    }
+    @include mediaQuery.respond-to(medium){
+        height: 300px;
+    }
+}
+
+.text-container {
+    margin:1rem;
+    max-width: 40vw;
+    word-wrap: break-word; 
+    text-align: center; 
+    
+    @include mediaQuery.respond-to(large){
+        max-width: 95vw;
+        align-items: center;
+    }
+
+}
+
+.grid-wrapper {
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  
+
+
+
+

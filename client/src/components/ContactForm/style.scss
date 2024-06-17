@@ -1,0 +1,57 @@
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
+.contact-form {
+    max-width: 600px;
+    font-size:x-large;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: globalVariables.$Grey;
+    font-family: globalVariables.$TextFontBold;
+    color: globalVariables.$FontColor;
+
+    textarea{
+        max-width: 100%;
+        max-height: 400px;
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        background-color: globalVariables.$Grey;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: globalVariables.$PrimaryBlue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: large;
+
+        &:hover {
+            background-color:  globalVariables.$SecondaryBlue;
+        }
+    }
+
+
+}

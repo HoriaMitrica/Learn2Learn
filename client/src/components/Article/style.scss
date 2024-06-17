@@ -1,0 +1,35 @@
+@use "../../styles/globalVariables.scss";
+@use "../../styles/mediaQuery.scss";
+
+.article-wrapper {
+  position: relative;
+  justify-self: center;
+  width: 500px;
+  height: 500px;
+  @include mediaQuery.respond-to(xlarge){
+    width: 400px;
+    height: 400px;
+  }
+  @include mediaQuery.respond-to(small){
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+.article-container {
+  height:auto;
+  width:100%;;
+  pointer-events: none; 
+}
+
+.article-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+}

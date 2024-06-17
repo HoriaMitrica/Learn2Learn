@@ -1,0 +1,132 @@
+@use "../../styles/globalStyle.scss";
+@use "../../styles/globalVariables.scss";
+@use '../../styles/mediaQuery.scss';
+
+.logo-img {
+  width: 64px;
+  height: auto;
+  margin-left: 1em;;
+  margin-top: 0.25em;
+}
+
+.link {
+  cursor: pointer;
+}
+
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.btn-nav{
+  display:none;
+  @include mediaQuery.respond-to(medium){
+    font-family: globalVariables.$GulfDisplay;
+    font-size: large;
+    color:globalVariables.$FontColor;
+    display:block;
+    background-color: globalVariables.$SecondaryBlue;
+    width:300px;
+    margin-left:auto;
+    border:none;
+    left:1rem;
+  }
+
+}
+
+.nav-link-span{
+
+  font-family: globalVariables.$GulfDisplay;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+
+}
+.nav-link {
+  transform: skew(-20deg);
+  border-top:0.5px solid globalVariables.$SecondaryBlue;
+  &:hover:not(.active) {
+    color: globalVariables.$FontColor;
+    background: globalVariables.$SecondaryBlue;
+  }
+  &:not(.active)
+  {
+    background: globalVariables.$PrimaryBlue;
+  }
+  &:last-child {
+    padding-right: 3em;
+  }
+  
+  &.active {
+    color: globalVariables.$TextFont;
+    background: -webkit-linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+    background: linear-gradient(45deg, globalVariables.$PrimaryYellow, globalVariables.$Orange);
+  }
+  @include mediaQuery.respond-to(medium){
+    transform: skew(0);
+  }
+}
+
+
+#nav {
+  background-color: globalVariables.$PrimaryBlue;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  user-select: none;
+  height: 4em;
+
+  &.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
+  @include mediaQuery.respond-to(medium){
+    flex-direction: column;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1rem;
+}
+
+.right {
+  display: flex;
+  overflow: hidden;
+
+  position: relative;
+  left: 1.5em;
+  height: auto;
+  @include mediaQuery.respond-to(medium){
+    flex-direction: column;
+    height:100%;
+  }
+}
+
+
+@keyframes navbar-hover {
+  10% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}
+
+.home-link{
+  @include mediaQuery.respond-to(xlarge) {
+    display: none;
+  }
+}
