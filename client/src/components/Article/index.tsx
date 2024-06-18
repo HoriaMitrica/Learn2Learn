@@ -2,7 +2,6 @@ import './style.scss'
 import { ArticleProps } from "../../models/article"
 
 export const Article: React.FC<ArticleProps> = ({ ...props }) => {
-    console.log(props.link);
     return (
         <>
             <div className="article-wrapper">

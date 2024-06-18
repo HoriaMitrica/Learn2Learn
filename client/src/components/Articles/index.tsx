@@ -45,7 +45,6 @@ export const Articles = () => {
         )
     }
     const GenerateTestimonials = (): ReactNode => {
-        console.log(testimonials);
         return (
             <>
                 <div className="video-grid">
