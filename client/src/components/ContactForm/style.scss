@@ -27,6 +27,7 @@
     }
 
     input[type="text"],
+    input[type="phoneNumber"],
     input[type="email"],
     textarea {
         background-color: globalVariables.$Grey;
@@ -51,6 +52,7 @@
         &:hover {
             background-color:  globalVariables.$SecondaryBlue;
         }
+        
     }
 
 
