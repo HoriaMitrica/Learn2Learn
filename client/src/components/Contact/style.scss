@@ -9,28 +9,29 @@
     }
     font-size: large;
     font-family: globalVariables.$TextFontBold;
-    margin: 1rem;
-    padding: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+
     width: 100%;
     text-align: center;
 }
 .main.contact-text {
     color: white;
 
-    .contact-left,
-    .contact-right {
-        margin: 1rem;
+    .contact-left, .contact-right {
+        margin:1rem;
     }
     .contact-right {
-        height: 500px;
-        width: 500px;
-        @include mediaQuery.respond-to(medium) {
-            height: 400px;
-            width: 400px;
+        height:500px;
+        width: 500px;  
+        @include mediaQuery.respond-to(medium){
+            height:400px;
+            width: 400px;  
         }
-        @include mediaQuery.respond-to(small) {
-            height: 300px;
-            width: 300px;
+        @include mediaQuery.respond-to(small){
+            height:300px;
+            width: 300px;  
+
         }
     }
 
@@ -39,7 +40,6 @@
         width: 100%;
         padding-bottom: 56.25%; // 16:9 aspect ratio
         height: 0;
-
         overflow: hidden;
 
         iframe {
@@ -52,3 +52,4 @@
         }
     }
 }
+

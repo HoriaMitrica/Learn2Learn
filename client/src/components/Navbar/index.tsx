@@ -44,13 +44,19 @@ export const Navbar: React.FC = () => {
                             </span>
                         </Link>
                         <Link onClick={clickedLink} className='link nav-link' to='about' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
-                            <span className='nav-link-span'>
+                            <span className='nav-link-span xlarge-screen'>
                                 Despre noi
+                            </span>
+                            <span className='nav-link-span large-screen'>
+                                Despre
                             </span>
                         </Link>
                         <Link onClick={clickedLink} className='link nav-link' to='media_aparitions' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
-                            <span className='nav-link-span'>
+                            <span className='nav-link-span xlarge-screen'>
                                 Apariții media
+                            </span>
+                            <span className='nav-link-span large-screen'>
+                                Apariții
                             </span>
                         </Link>
                         <Link onClick={clickedLink} className='link nav-link' to='articles' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
@@ -64,7 +70,7 @@ export const Navbar: React.FC = () => {
                             </span>
                         </Link>
                         <Link onClick={clickedLink} className='link nav-link' to='offer' spy={true} smooth={true} offset={0} duration={SCROLL_DURATION}>
-                            <span className='nav-link-span'>
+                            <span className='nav-link-span '>
                                 Oferta
                             </span>
                         </Link>
