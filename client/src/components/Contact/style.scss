@@ -11,6 +11,7 @@
     font-family: globalVariables.$TextFontBold;
     margin-top: 1rem;
     padding: 0;
+
     width: 100%;
     text-align: center;
 }
@@ -30,6 +31,7 @@
         @include mediaQuery.respond-to(small){
             height:300px;
             width: 300px;  
+
         }
     }
 
@@ -39,6 +41,7 @@
         padding-bottom: 56.25%; // 16:9 aspect ratio
         height: 0;
         overflow: hidden;
+
         iframe {
             position: absolute;
             top: 0;
@@ -49,3 +52,4 @@
         }
     }
 }
+

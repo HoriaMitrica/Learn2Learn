@@ -5,7 +5,9 @@ export const Contact = () => {
     return (
         <>
             <section id="contact" className="main">
+
                 <div className="section-end">
+
                     <div>
                         <h1 className="title-smaller main contact-text">C o n t a c t</h1>
                         <ContactForm />
@@ -33,6 +35,7 @@ export const Contact = () => {
                     <h2 className="contact-us">
                         <a href="https://cleancode.ro/" target="_blank">Powered by www.cleancode.ro 2024, Bucharest, Romania</a>
                     </h2>
+
                 </div>
             </section>
         </>

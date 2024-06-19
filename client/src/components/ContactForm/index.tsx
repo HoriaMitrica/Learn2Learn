@@ -3,7 +3,6 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { EmailJsInfo } from '../../models/enum';
 import './style.scss';
 
-
 export const ContactForm: React.FC = () => {
 
     const form = useRef<HTMLFormElement>(null);
@@ -19,6 +18,7 @@ export const ContactForm: React.FC = () => {
             ...prevFormData,
             [name]: value
         }));    
+
     };
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();

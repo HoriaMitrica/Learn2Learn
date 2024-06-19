@@ -16,7 +16,6 @@ export const About = () => {
                     </div>
                     <div>
                         Într-o lume în permanentă schimbare, învățarea este singura constantă. De aceea, Learn2Learn este un loc unde copiii învață să învețe, într-o locație primitoare, „ca acasă”, având ca spațiu de desfășurare două vile generoase și două curți cu spațiu de joacă de 400 mp. Copiii au parte de asistență și îndrumare la teme, ateliere și activități opționale variate și captivante, pentru o educație completă, cu grijă pentru minte, corp și suflet.
-                    </div>
                 </div>
                 <div className="gradient-transition"></div>
             </section>

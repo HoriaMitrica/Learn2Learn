@@ -49,6 +49,7 @@
     font-size: medium;
   }
 
+
 }
 .nav-link {
   transform: skew(-20deg);
@@ -61,7 +62,6 @@
   {
     background: globalVariables.$PrimaryBlue;
   }
-
   
   &.active {
     color: globalVariables.$TextFont;
@@ -142,4 +142,5 @@
   @include mediaQuery.respond-to(large) {
     display:contents;
   }
+
 }
