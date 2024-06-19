@@ -1,15 +1,17 @@
 import React, { useRef, useState } from 'react';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { EmailJsInfo } from '../../models/enum';
 import './style.scss';
+
 
 export const ContactForm: React.FC = () => {
 
     const form = useRef<HTMLFormElement>(null);
+    const [loading, setLoading] = useState<boolean>(false);
     const [formData, setFormData] = useState({
         user_name: '',
         user_email: '',
-        phone_number:'',
+        phone_number: '',
         message: ''
     });
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -17,27 +19,31 @@ export const ContactForm: React.FC = () => {
         setFormData(prevFormData => ({
             ...prevFormData,
             [name]: value
-        }));    
-
+        }));
     };
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setLoading(true);
 
         if (form.current) {
             emailjs
                 .sendForm(EmailJsInfo.Service_id, EmailJsInfo.Template_id, form.current, EmailJsInfo.Acc_public_key)
                 .then(
-                    (result: EmailJSResponseStatus) => {
-                        console.log('SUCCESS!', result.text);
+                    () => {
+
                         setFormData({
                             user_name: '',
                             user_email: '',
-                            phone_number:'',
+                            phone_number: '',
                             message: ''
                         });
                         alert("Mesajul a fost trimis!");
                     }
-                );
+                )
+                .finally(() => {
+                    setLoading(false);
+                });
+
         }
     };
 
@@ -53,8 +59,10 @@ export const ContactForm: React.FC = () => {
                 <input type="phoneNumber" name="phone_number" value={formData.phone_number} onChange={handleChange} required />
                 <label>Mesaj</label>
                 <textarea name="message" value={formData.message} onChange={handleChange} required />
-                <input type="submit" value="Send" />
+                <input type="submit" value="Send" disabled={loading}/>
             </form>
+            {loading && <p className="suspense-text">Sending message...</p>}
+            
         </>
     );
 };
