@@ -19,7 +19,6 @@
         "title": "Matematică",
         "type": "inclus",
         "description": [
-            "Cursuri de performanță pentru clasele a Ill-a si a IV-a",
             "Matematica predată cu ajutorul miturilor din Grecia antică",
             "O metodă unică de predare, gândită special pentru a „îmblânzi” matematica"
         ],
@@ -126,17 +125,6 @@
         "type": "opțional",
         "description": [
             "Cursuri distractive și interactive de muzică și percuție"
-        ],
-        "aditionalLinks": [],
-        "linkAliases": [],
-        "aditionalImages":[]
-    },
-    {
-        "id": 11,
-        "title": "Consiliere",
-        "type": "opțional",
-        "description": [
-            "Consiliere privind sănătatea emoțională cu psiholog"
         ],
         "aditionalLinks": [],
         "linkAliases": [],
