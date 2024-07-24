@@ -2,11 +2,7 @@
 @use "../../styles/mediaQuery.scss";
 
 .contact-us {
-    a {
-        color: globalVariables.$White;
 
-        text-decoration: none;
-    }
     font-size: large;
     font-family: globalVariables.$TextFontBold;
     margin-top: 1rem;
@@ -14,6 +10,12 @@
 
     width: 100%;
     text-align: center;
+
+    a {
+        color: globalVariables.$White;
+
+        text-decoration: none;
+    }
 }
 .main.contact-text {
     color: white;

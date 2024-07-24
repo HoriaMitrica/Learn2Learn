@@ -4,8 +4,8 @@ EXPOSE 80
 FROM node:20.14.0-alpine AS build
 WORKDIR /react
 COPY . .
-RUN npm install
-RUN npm run build
+RUN yarn install
+RUN yarn run build
 
 FROM base AS final
 RUN a2enmod rewrite

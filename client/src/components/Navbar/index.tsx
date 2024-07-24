@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
         }
         setClicked(!clicked);   
     }
-    const clickedLink=()=>{
+    const   clickedLink=()=>{
         if (navRef.current) {
                 navRef.current.style.height = '4em';
                 setClicked(false);
