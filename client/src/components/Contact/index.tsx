@@ -16,7 +16,7 @@ export const Contact = () => {
                         <div className="contact-left">
                             <div style={{ fontSize: "x-large" }}>
                                 <div>📍 Strada Ticuș 12, Sector 3, zona Sălăjan</div>
-                                <div>✉️ contact@learn2learn.ro</div>
+                                <div>✉️ learn2learncontact@gmail.com</div>
                                 <div>📞 0728939560</div>
                                 <div>📞 0733650493</div>
                             </div>
