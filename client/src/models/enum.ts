@@ -9,7 +9,7 @@ export enum AssetPaths{
 }   
 
 export enum EmailJsInfo{
-    Service_id="service_arxpbrm",
+    Service_id="service_le8lcvr",
     Acc_public_key="0lAltdHkIfr8DEc74",
     Template_id="template_dw2g2yc"
 }

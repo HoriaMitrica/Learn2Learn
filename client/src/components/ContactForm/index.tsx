@@ -61,7 +61,7 @@ export const ContactForm: React.FC = () => {
                 <textarea name="message" value={formData.message} onChange={handleChange} required />
                 <input type="submit" value="Send" disabled={loading}/>
             </form>
-            {loading && <p className="suspense-text">Sending message...</p>}
+            {loading && <p className="suspense-text">Se trimite mesajul...</p>}
             
         </>
     );
